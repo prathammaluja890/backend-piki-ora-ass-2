@@ -84,9 +84,7 @@ def me(request):
     return Response(UserSerializer(request.user).data)
 
 
-# ══════════════════════════════════════════════════════════
-#  DOCTORS
-# ══════════════════════════════════════════════════════════
+
 
 class DoctorViewSet(viewsets.ModelViewSet):
     """

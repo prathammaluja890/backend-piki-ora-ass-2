@@ -1,5 +1,6 @@
 #!/bin/bash
-# Build step Vercel runs for the backend: install deps and collect static files
-# (so the Django admin and DRF browsable API have their CSS in production).
-pip install -r requirements.txt
-python manage.py collectstatic --noinput
+
+pip3 install --upgrade pip
+pip3 install -r requirements.txt
+
+python3 manage.py collectstatic --noinput
